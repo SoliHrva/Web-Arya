@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US_Allianz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-100">
+<!-- Header -->
+<nav class="bg-blue-800 shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="index.html" class="text-xl font-bold text-white">AGENCY_Allianz</a>
+
+        <!-- Menu Items -->
+        <div class="hidden md:flex space-x-7">
+            <a href="index.html" class="font-bold text-gray-100 hover:text-rose-300">Home</a>
+            <a href="produk.html" class="font-bold text-gray-100 hover:text-rose-300">Product</a>
+            <a href="bisnis.html" class="font-bold text-gray-100 hover:text-rose-300">Business</a>
+            <a href="Aboutus.html" class="font-bold text-gray-100 hover:text-rose-300">About Us</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden flex items-center text-gray-100 focus:outline-none">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-md">
+        <a href="index.html" class="font-bold block px-4 py-2 text-gray-600 hover:text-rose-300">Home</a>
+        <a href="produk.html" class="font-bold block px-4 py-2 text-gray-600 hover:text-rose-300">Product</a>
+        <a href="bisnis.html" class="font-bold block px-4 py-2 text-gray-600 hover:text-rose-300">Business</a>
+        <a href="Aboutus.html" class="font-bold block px-4 py-2 text-gray-600 hover:text-rose-300">About Us</a>
+    </div>
+</nav>
+    <script>
+    // Toggle menu visibility
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+    });
+    </script>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gray-100">
+    <div class="container mx-auto flex flex-col items-center text-center py-16 px-6">
+        <h2 class="text-4xl font-bold mb-4">ABOUT_US</h2>
+        <p class="text-lg mb-8">Sebagai agen asuransi profesional, saya siap membantu Anda memilih produk perlindungan terbaik untuk masa depan Anda dan keluarga.</p>
+        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Hubungi Saya</a>
+    </div>
+    </section>
+
+    <!-- Services Section -->
+<section id="services" class="bg-white">
+    <div class="container mx-auto py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Layanan Saya</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Konsultasi Keuangan -->
+        <div class="p-6 bg-gray-100 rounded-lg shadow flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m-1-4h2a1 1 0 011 1v2m1 4a1 1 0 01-1 1h-2m-4 4h6a2 2 0 002-2v-2a2 2 0 00-2-2H7a2 2 0 00-2 2v2a2 2 0 002 2z" />
+        </svg>
+        <h4 class="text-xl font-bold mb-2">Konsultasi Keuangan</h4>
+        <p class="text-center">Saya memberikan konsultasi gratis untuk membantu Anda merencanakan perlindungan finansial.</p>
+        </div>
+        <!-- Perlindungan Jiwa -->
+        <div class="p-6 bg-gray-100 rounded-lg shadow flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7M9 13l-4-4M7 5h6a2 2 0 012 2v6a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2z" />
+        </svg>
+        <h4 class="text-xl font-bold mb-2">Perlindungan Jiwa</h4>
+        <p class="text-center">Pilih program asuransi jiwa yang sesuai untuk melindungi Anda dan orang tercinta.</p>
+        </div>
+        <!-- Investasi & Tabungan -->
+        <div class="p-6 bg-gray-100 rounded-lg shadow flex flex-col items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-orange-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c2.28 0 4-1.72 4-4 0-1.6-2.13-3.63-3.82-5.18A.999.999 0 0012 0c-.28 0-.56.11-.78.3C9.12 1.37 7 3.4 7 5c0 2.28 1.72 4 4 4zm0 4c-1.48 0-2.77.81-3.45 2.06C8.3 15.03 9.31 16 10.44 16H13.7c1.54 0 2.77-1.23 2.77-2.77v-.23c0-1.77-1.45-3.22-3.22-3.22H12z" />
+        </svg>
+        <h4 class="text-xl font-bold mb-2">Investasi & Tabungan</h4>
+        <p class="text-center">Gabungkan investasi dan tabungan jangka panjang untuk masa depan yang lebih cerah.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2024 Nama Agen. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
